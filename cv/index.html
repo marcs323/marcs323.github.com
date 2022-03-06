@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- indica la versión de HTML en la que trabajamos. Colocado así nos mete por defecto en la última versión -->
+
+<html> <!-- etiqueta maestra. Dentro de ella va toda la página -->
+  <head> <!-- una de las dos partes principales de la página. Es donde indicamos como queremos que se muestren las cosas y los metadatos -->
+    <title> CV de Marcos Gil </title> <!-- lo que se muestra en la pestaña -->
+    <meta charset="utf-8"> <!-- estructura de los metadatos -->
+    <meta name="description" content="Físico teórico recién graduado con conocimientos
+    de desarrollo frontend y backend, data science y deep and machine learning buscando
+    puestos junior en el mundo de la tecnología y el software para desarrollar una carrera
+    profesional">
+
+
+    <!-- metadatos del protocolo open graph -->
+
+    <meta name="og:title" content= "CV de Marcos Gil Gómez">
+    <meta name="og:description" content= "Físico teórico recién graduado con conocimientos
+    de desarrollo frontend y backend, data science y deep and machine learning buscando
+    puestos junior en el mundo de la tecnología y el software para desarrollar una carrera
+    profesional">
+    <meta name="og:url" content= "http://marcs.me">
+    <meta name="og:site_name" content= "Proyectos personales de Marcos">
+    <meta name="og:type" content= "website">
+    <meta name="og:image" content="<url-imagen>">
+
+  </head>
+  <body style="font-family:Helvetica, Arial, sans-serif;"> <!-- una de las dos partes principales de la página. Aquí se escribe todo lo que se va a ver en la página -->
+<!-- el comando font-family:enlacefuente; nos permite cambiar el tipo de fuente de la apgina(en body) o de una zona concreta( en la parte correspondiente) -->
+<!-- Esquema de atributos de una nombreetiqueta
+ <nombreetiqueta nombreatributo="valoratributo"> </nombreetiqueta>
+los atributos pueden no tener un valor ( ej. booleanos como autofocus que solo por estar ya es verdadero) -->
+    <header style ="background-color:#3480eb;color:white;text-align:center;padding:16px;"> <!-- define encabezados en nuestra página web. Puede haber varios. Va en body -->
+      <!-- <hi></hi> i =1,2,3,4,5 y 6 etiqueta de título. Los títulos más importantes de la página se deben colocar en h1 -->
+      <!-- background-color define el color de fondo(hay que colocarlo en hexadecimal) de nuestra página -->
+      <h1 style="display:inline-block;width:400px;">CV de Marcos Gil </h1> <!-- El atributo style nos permite modificar las propiedades CSS directamente en HTML y, aunque esto no es una buena praxis, es bueno para empezar -->
+      <p style ="display:inline-block;font-weight:200;">Junior FullStack Developer </p> <!-- pone los dos bloques de elementos(paragrafos en este caso) en linea en lugar de en columna( que es su posición por defecto) -->
+      <!-- el atributo width modifica la anchura (en pixeles) del bloque del eleemnto al que se lo aplicas -->
+    </header>
+    <div style="background-color:#5fe8df;color:black;text-align:center;padding:10px;"> <!-- la etiqueta div sirve para agrupar varias carecteristicas de nuestra página para que puedan ser modificadas mediante CSS -->
+      <!-- la etiqueta color:nombrecolor; nos permite cambair el color de la letra -->
+      Graduado en Física y Master en Física teórica con conocimientos
+      en programación tanto frontend como backend y conocimientos de Data Science
+      y Machine Learning con interés en iniciar una carrera en el mundo del desarrollo de software
+    </div>
+    <section> <!-- define el entorno donde colocamos otra sección de nuestra página. Es simplemente para ordenar los elementos de cara a la lectura del codigo por programas no debe tener impacto visual en la página -->
+      <div style="width:600px;margin-right:auto;margin-left:auto;"> <!-- ponemos el color de fondo como truco para poder ver dónde se situa elemento que estamos definiendo(probablemente en la versión final de este codigo ya no esté -->
+        <!-- EDUCACIÓN -->
+        <div style ="display:inline-block;width:55%;vertical-align:top;"> <!-- vertical-align:dirección; alinea texto e imagen en la dirección que le digas -->
+          <div>
+            <h3 style="font-size:36px;font-weight:700;style=margin-top:50px;"> Educación </h3>
+            <!-- listas de definiciones  (ver apuntes para tipos)  -->
+            <div>
+              <dl>
+                <dt style="font-size:22px;text-transform:upercase;margin-bottom:12px;margin-top:36px;"> Grado en Física </dt>
+                <dd> 2016-2021, Universidad de Valencia </dd>
+
+                <dt style="font-size:22px;text-transform:upercase;margin-bottom:12px;margin-top:36px;"> Master en Física Avanzada </dt>
+                <dd> 2021-2022, Especialidad Teórica, Universidad de Valencia </dd>
+
+                <dt style="font-size:22px;text-transform:upercase;margin-bottom:12px;margin-top:36px;"> Grado en Matemáticas </dt>
+                <dd> 2015-2016, No finalizado, Universidad de Valencia </dd>
+
+                <dt style="font-size:22px;text-transform:upercase;margin-bottom:12px;margin-top:36px;"> Curso profesional de GIT </dt>
+                <dd> 2021-2022,certificado, www.codigofacilito.com </dd>
+
+              </dl>
+            </div>
+          </div>
+        <!-- EXPERIENCIA PROFESIONAL -->
+        </div>
+        <!-- foto de currículum -->
+        <div style ="display:inline-block;width:30%;margin-left:80px;margin-top:45px;">
+          <img src="imagenes/índice.jpg"  /> <!-- ejemplo de etiqueta con autocierre. En el atributo src se pone el origen(o ruta(siempre debe ser RELATIVA para poder abrir la página en otros ordenadores y que las imagenes se vean)) donde encontramos la foto(si la tenemos en nuestro ordenador la arrastramos al CMD y esto nos da la ruta) -->
+        </div>
+
+        <div style="margin-top:14px;">
+          <h3 style="font-size:36px;font-weight:700;"> Experiencia profesional </h3>
+          <!-- listas de definiciones  (ver apuntes para tipos)  -->
+        <div>
+          <dl>
+            <dt> Practicas en instituto de física corpuscular IFIC </dt>
+            <dd> 2020-2021, 140h, desarrollo de un modelo machine learning con R </dd>
+          </dl>
+        </div>
+        </div>
+        <!-- Información Adicional -->
+          <div style="margin-top:70px;">
+            <h3 style="font-size:36px;font-weight:700;"> Información Adicional </h3>
+            <ul style="margin-top:12px;padding:0px;">
+              <li style ="margin-top:16px;"> Experiencia como coordinador de un grupo de alrededor de 20 personas en una asociación sin ánimo de lucro </li>
+              <li style ="margin-top:16px;"> Autodidacta y con gran curiosidad </li>
+              <li style ="margin-top:16px;"> Pensamiento crítico y capacidad para analizar, dividir y resolver problemas complejos </li>
+              <li style ="margin-top:16px;"> Conocimiento amplio de matemáticas(estadística y probabilidad, cálculo, álgebra...) </li>
+              <li style ="margin-top:16px;"> Experiencia trabajando en equipo </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div style="width:600px;margin-right:auto;margin-left:auto;">
+        <h3 style="font-size:36px;font-weight:700;"> Redes sociales </h3>
+        <ul style="margin-top:12px;padding:0px;">
+          <li style ="margin-top:16px;"> <a href="https://www.linkedin.com/in/marcosgilgómez/" target="_blank"> LinkedIn </a></li> <!-- target="_blank" sirve para abrir el enlace en una pestaña del navegador distinta a donde está dicho enlace" -->
+          <li style ="margin-top:16px;"> <a href="https://github.com/Marcs323" target="_blank"> GitHub </a> </li>
+        </ul>
+      <!--  <a href="" ></a> estructura de un link. En href indicamos a que parte de la página queremos ir mediante el link -->
+      </div>
+
+    </section>
+  </body>
+</html>
+
+<!--NOTAS GENERALES-->
+
+<!-- protocolo open graph/ diseñado por facebook para mostrar las páginas
+  de forma mucho más enriquecedora en redes sociales. Está bien incluirlo siempre-->
+
+<!-- todos los elementos en HTML ocupan un bloque que se puede
+redimensionar y mover a voluntad utilizando comandos de CSS -->
+
+<!-- varios formatos de colores (nombre o hexadecimal). 140 nombre de colores e infinitas mezclas de hezadecimal(web:colorpicker(metodo rgb)) -->
+
+<!-- podemos colocar varias fuentes(en orden de aparición por si no encuentra la primera o incluso familias de fuentes como sans-serif -->
+<!-- font-weight:número; mide el grosor de la fuente de 0 a 900 el valor para el texto "en negrita" es 700 o se puede poner el valor bold-->
+<!-- la etiqueta h1 se tieen que utilizar SOLO UNA VEZ en toda la página y es donde debe ir el título que tenga relación directa con la página -->
+<!-- el comando padding:tamaño en pixeles; inserta arriba, abajo y a los lados un espacio en blanco de la dimensión requerida.... el atributo margin hace lo propio con los margenes de los elementos-->
